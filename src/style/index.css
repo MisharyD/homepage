@@ -16,6 +16,7 @@
 {
     --title-size:48px;
     --main-margin: 10vw;
+    --card-width: calc(100% - (2 * var(--main-margin)))
 }
 
 html,body
@@ -32,7 +33,7 @@ header
     margin: 32px;
 }
 
-.my-picture
+header .my-picture
 {
     width:320px;
 }
@@ -67,9 +68,6 @@ main
 {
     margin:32px var(--main-margin);
     margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .main-title
@@ -82,7 +80,7 @@ main
 .cards-container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc(100% - (2 * var(--main-margin))), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
     gap:70px;
 }
 
@@ -133,15 +131,50 @@ main
 
 footer
 {
+    --footer-margin:24px;
     display: flex;
     flex-direction: column;
     margin-top: 120px;
     gap:2rem;
     background-color: #0891B2;
+    color: white;
+}
+
+.address
+{
+    margin:12px var(--footer-margin);
 }
 
 .footer-title
 {
     font-size: 48px;
+    margin: 0px;
+    font-weight: lighter;
     text-align: center;
+}
+
+.contacts-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 12px var(--footer-margin);
+    gap:1rem;
+}
+
+.social-links
+{
+    display: flex;
+    align-self: center;
+    gap:1rem;
+}
+
+.contacts-container .icon
+{
+    width: 40px;
+}
+
+.footer .my-picture
+{
+    
 }
