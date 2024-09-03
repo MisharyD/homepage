@@ -135,7 +135,7 @@ footer
     display: flex;
     flex-direction: column;
     margin-top: 120px;
-    gap:2rem;
+    
     background-color: #0891B2;
     color: white;
 }
@@ -148,7 +148,7 @@ footer
 .footer-title
 {
     font-size: 48px;
-    margin: 0px;
+    margin: 12px;
     font-weight: lighter;
     text-align: center;
 }
