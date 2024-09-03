@@ -14,7 +14,13 @@
 
 :root
 {
-    --title-size:48px
+    --title-size:48px;
+    --main-margin: 10vw;
+}
+
+html,body
+{
+    margin:0px;
 }
 
 header
@@ -23,12 +29,12 @@ header
     flex-direction: column;
     align-items: center;
     gap:0.5rem;
-    padding:12px;
+    margin: 32px;
 }
 
 .my-picture
 {
-    width:350px;
+    width:320px;
 }
 
 .about-title
@@ -59,8 +65,11 @@ header .icon
 
 main
 {
-    margin: 12px;
+    margin:32px var(--main-margin);
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-title
@@ -73,22 +82,21 @@ main
 .cards-container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% - (2 * var(--main-margin))), 1fr));
     gap:70px;
-    width: 100%;
 }
 
 .project-card
 {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 100%;
 }
 
 .project-img
 {
-    width:350px;
-    height:350px
+    width:100%;
+    height:auto;
 }
 
 .project-info
@@ -121,4 +129,19 @@ main
 .project-info .icon
 {
     width: 24px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    gap:2rem;
+    background-color: #0891B2;
+}
+
+.footer-title
+{
+    font-size: 48px;
+    text-align: center;
 }
