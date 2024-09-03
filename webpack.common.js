@@ -32,7 +32,7 @@ const path = require('path');
      {
       test: /\.html$/i,
       loader: "html-loader",
-    }
+      }
     ],
   },
  };

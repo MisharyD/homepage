@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*
+{
+    font-family: "robotoregular";
+}
+
+header
+{
+    --icon-width:24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+    padding:12px;
+}
+
+.my-picture
+{
+    width:350px;
+}
+
+.about-title
+{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.about-info
+{
+    margin: 0px;
+}
+
+.contacts-container
+{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+header .icon
+{
+    width:var(--icon-width);
+    fill:black;
+}
