@@ -12,10 +12,13 @@
     font-family: "robotoregular";
 }
 
+:root
+{
+    --title-size:48px
+}
+
 header
 {
-    --icon-width:24px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +35,8 @@ header
 {
     margin-top: 24px;
     margin-bottom: 12px;
+    font-size: var(--title-size);
+    font-weight: lighter;
 }
 
 .about-info
@@ -43,11 +48,77 @@ header
 {
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap:3rem;
 }
 
 header .icon
 {
-    width:var(--icon-width);
+    width:32px;
     fill:black;
+}
+
+main
+{
+    margin: 12px;
+    margin-top: 24px;
+}
+
+.main-title
+{
+    text-align: center;
+    font-size: var(--title-size);
+    font-weight: lighter;
+}
+
+.cards-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:70px;
+    width: 100%;
+}
+
+.project-card
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.project-img
+{
+    width:350px;
+    height:350px
+}
+
+.project-info
+{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    padding: 12px 24px;
+    height:150px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-info .name
+{
+    font-size: 28px;
+}
+
+.name-and-links-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-container
+{
+    display: flex;
+    gap:1rem;
+}
+
+.project-info .icon
+{
+    width: 24px;
 }
