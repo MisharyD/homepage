@@ -194,6 +194,7 @@ footer .contacts-container
     {
         --section-margin:5vw;
         --card-width: 350px;
+        --title-size:48px
     }
 
     header
@@ -327,6 +328,7 @@ footer .contacts-container
     {
         --section-margin:5vw;
         --card-width: 300px;
+        --title-size:48px
     }
 
     header
