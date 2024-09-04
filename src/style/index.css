@@ -65,6 +65,7 @@ header .my-picture
 .description
 {
     color: #565656;
+    font-size: 18px;
 }
 
 header .contacts-container
@@ -194,7 +195,7 @@ footer .contacts-container
 
 
 /* tablet */ 
-@media (min-width:500px) 
+@media (min-width:600px) 
 {
     :root
     {
@@ -243,7 +244,7 @@ footer .contacts-container
     .description
     {
         margin: 0px;
-        font-size: 18px
+        font-size: 20px
     }
     
     header .contacts-container
@@ -332,7 +333,7 @@ footer .contacts-container
 }
 
 /* desktop */
-@media (min-width:1000px)
+@media (min-width:1200px)
 {
     :root
     {
@@ -369,7 +370,7 @@ footer .contacts-container
         gap:1rem;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         min-height: 100%;
-        padding:0px 24px;
+        padding:12px 24px;
     }
 
     .about-title
@@ -383,7 +384,7 @@ footer .contacts-container
     .description
     {
         margin: 0px;
-        font-size: 14px
+        font-size: 24px
     }
 
     header .contacts-container
@@ -460,9 +461,9 @@ footer .contacts-container
     footer .my-picture
     {
         width:50vw;
-        min-width: 600px;
+        max-width: 600px;
         height:30vh;
-        min-height: 300px; 
+        min-height: 400px; 
     }
 
 }
