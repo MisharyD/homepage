@@ -62,6 +62,11 @@ header .my-picture
     font-weight: lighter;
 }
 
+.description
+{
+    color: #565656;
+}
+
 header .contacts-container
 {
     align-self: center;
@@ -187,8 +192,147 @@ footer .contacts-container
     width: 40px;
 }
 
+
+/* tablet */ 
+@media (min-width:500px) 
+{
+    :root
+    {
+        --section-margin:5vw;
+        --card-width: 300px;
+        --title-size:48px
+    }
+    
+    header
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:0;
+        margin: 32px var(--section-margin);
+        height: 20vw;
+        min-height: 250px;
+    }
+    
+    header .my-picture
+    {
+        width:300px;
+        height: 300px;
+        margin-bottom: 48px;
+    }
+    
+    .about-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap:1rem;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        min-height: 100%;
+        padding:12px 24px;
+    }
+    
+    .about-title
+    {
+        align-self: flex-start;
+        margin:0px;
+        font-size: var(--title-size);
+        font-weight: lighter;
+    }
+    
+    .description
+    {
+        margin: 0px;
+        font-size: 18px
+    }
+    
+    header .contacts-container
+    {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap:2rem;
+    }
+    
+    header .icon
+    {
+        width:32px;
+        fill:black;
+    }
+    
+    .main-title
+    {
+        text-align: start
+    }
+    
+    footer
+    {
+        --footer-margin:24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 120px;
+        
+        background-color: #0891B2;
+        color: white;
+    }
+    
+    .footer-info-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+    
+    .address
+    {
+        margin:12px var(--footer-margin);
+        font-size: 28px;
+    }
+    
+    .footer-title
+    {
+        font-size: 64px;
+        margin: 0px;
+        padding:0px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    
+    footer .contacts-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 12px var(--footer-margin);
+        gap:1rem;
+        font-size: 28px;
+    }
+    
+    .social-links
+    {
+        display: flex;
+        align-self: center;
+        gap:1rem;
+    }
+    
+    .contacts-container .icon
+    {
+        width: 40px;
+    }
+    
+    footer .my-picture
+    {
+        width:30vw;
+        min-width: 400px;
+        height:20vh;
+        min-height: 400px; 
+    }
+    
+}
+
 /* desktop */
-@media (min-width:1200px)
+@media (min-width:1000px)
 {
     :root
     {
@@ -221,6 +365,7 @@ footer .contacts-container
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        min-height:100%;
         gap:1rem;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         min-height: 100%;
@@ -238,7 +383,7 @@ footer .contacts-container
     .description
     {
         margin: 0px;
-        font-size: 18px
+        font-size: 14px
     }
 
     header .contacts-container
@@ -318,144 +463,6 @@ footer .contacts-container
         min-width: 600px;
         height:30vh;
         min-height: 300px; 
-    }
-
-}
-
-/* tablet */ 
-@media (min-width:750px) 
-{
-    :root
-    {
-        --section-margin:5vw;
-        --card-width: 300px;
-        --title-size:48px
-    }
-
-    header
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap:0;
-        margin: 32px var(--section-margin);
-        height: 20vw;
-        min-height: 250px;
-    }
-
-    header .my-picture
-    {
-        width:300px;
-        height: 300px;
-        margin-bottom: 48px;
-    }
-
-    .about-container
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap:1rem;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        min-height: 100%;
-        padding:12px 24px;
-    }
-
-    .about-title
-    {
-        align-self: flex-start;
-        margin:0px;
-        font-size: var(--title-size);
-        font-weight: lighter;
-    }
-
-    .description
-    {
-        margin: 0px;
-        font-size: 18px
-    }
-
-    header .contacts-container
-    {
-        align-self: flex-end;
-        display: flex;
-        align-items: center;
-        gap:2rem;
-    }
-
-    header .icon
-    {
-        width:32px;
-        fill:black;
-    }
-
-    .main-title
-    {
-        text-align: start
-    }
-
-    footer
-    {
-        --footer-margin:24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 120px;
-        
-        background-color: #0891B2;
-        color: white;
-    }
-
-    .footer-info-container
-    {
-        display: flex;
-        flex-direction: column;
-        gap:2rem;
-    }
-
-    .address
-    {
-        margin:12px var(--footer-margin);
-        font-size: 28px;
-    }
-
-    .footer-title
-    {
-        font-size: 64px;
-        margin: 0px;
-        padding:0px;
-        font-weight: lighter;
-        text-align: center;
-    }
-
-    footer .contacts-container
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 12px var(--footer-margin);
-        gap:1rem;
-        font-size: 28px;
-    }
-
-    .social-links
-    {
-        display: flex;
-        align-self: center;
-        gap:1rem;
-    }
-
-    .contacts-container .icon
-    {
-        width: 40px;
-    }
-
-    footer .my-picture
-    {
-        width:30vw;
-        min-width: 400px;
-        height:20vh;
-        min-height: 400px; 
     }
 
 }
